@@ -1,0 +1,5 @@
+{
+    "folder" : "part_1/texts",
+    "path_from" : "texts/unlocked_text.txt",
+    "path_to" : "texts/locked_text.txt"
+}
