@@ -1,0 +1,1 @@
+path = "D:/3 Curs/oib/oib/lab_1/part_1/path.json"
