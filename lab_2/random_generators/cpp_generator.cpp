@@ -2,7 +2,6 @@
 #include <cstdlib>
 #include <ctime>
 
-
 void generator() {
     std::srand(static_cast<unsigned>(std::time(0)));
     for (int i = 0; i < 128; ++i) {
@@ -10,7 +9,6 @@ void generator() {
         std::cout << random_bit;
     }
 }
-
 
 int main() {
     generator();

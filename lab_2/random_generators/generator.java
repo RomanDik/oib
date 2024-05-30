@@ -1,8 +1,7 @@
-package lab_2;
-
 import java.util.Random;
 
 public class generator {
+
     private static final int SIZE = 128;
 
     public static void main(String[] args) {
