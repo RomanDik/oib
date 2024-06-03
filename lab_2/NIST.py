@@ -68,9 +68,7 @@ def similar_sequences_test(sequence: str) -> float:
     try:
         N = len(sequence)
         sum = 0
-        for bit in sequence:
-            if bit == "1":
-                sum += 1
+        sum = sequence.count("1")
         proportion_of_ones = sum / N
         if abs(proportion_of_ones - (0.5)) < 2 / math.sqrt(N):
             V_n = 0
