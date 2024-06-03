@@ -1,2 +1,0 @@
-SIGNS = {".", ','}
-PATH = "\paths.json"
