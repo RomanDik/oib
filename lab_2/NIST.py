@@ -41,10 +41,7 @@ def frequency_bitwise_test(sequence: str) -> float:
         N = len(sequence)
         sum = 0
         for bit in sequence:
-            if bit == "0":
-                sum -= 1
-            else:
-                sum += 1
+            sum += bit.count('1') - bit.count('0')
         S_N = (1.0 / math.sqrt(N)) * abs(sum)
         P_value = erfc(S_N / math.sqrt(2))
         if P_value < 0 or P_value > 1:
