@@ -3,7 +3,7 @@ import logging
 
 def writing_to_json(data: str, path: str)->None:
     """
-    Записывает данные в формате JSON в файл.
+    Запись данных в формате JSON в файл.
 
     Params:
     data (str): Данные должны быть записаны в формате JSON.
@@ -18,13 +18,14 @@ def writing_to_json(data: str, path: str)->None:
 
 def read_json(path: str)->dict:
     """
-    Считывает данные из файла JSON и возвращает их.
+    Считывание данные из файла JSON и возвращение их.
 
     Params:
     path (str): Путь к файлу JSON, который должен быть прочитан.
 
     Returns:
     str: Данные считываются из файла JSON.
+
     """
     try:
         with open(path, 'r') as file:
@@ -36,7 +37,7 @@ def read_json(path: str)->dict:
     
 def write_bytes_to_txt(data: str, path: str)->None:
     """
-    Записывает данные в текстовый файл.
+    Запись данных в текстовый файл.
 
     Params:
     data (str): Данные, которые будут записаны в файл.
@@ -51,13 +52,13 @@ def write_bytes_to_txt(data: str, path: str)->None:
 
 def read_bytes(path: str)->bytes:
     """
-    Считывает байтовые данные из файла.
+    Считывание байтовых данных из файла.
 
     Params:
     path (str): Путь к файлу, который будет прочитан.
 
     Returns:
-    bytes: Данные в байтах, считываемые из файла.
+    bytes: Байтовые данные, считываемые из файла.
     """
     try:
         with open(path, 'rb') as file:
@@ -69,11 +70,11 @@ def read_bytes(path: str)->bytes:
 
 def write_to_txt(text: str, path: str)->None:
     """
-    Записывает заданный текст в файл по указанному пути.
+    Запись заданного текста в файл по указанному пути.
 
     Params:
     text (str): Текст, который будет записан в файл.
-    path (str): Путь к файлу, в который будет записан текст.   
+    path (str): Путь к файлу, в который будет записан текст.    
     """
     try:
         with open(path, 'w', encoding='utf-8') as file:
@@ -84,7 +85,7 @@ def write_to_txt(text: str, path: str)->None:
 
 def read_txt(path: str)->str:
     """
-    Считывает содержимое файла по указанному пути.
+    Чтение содержимого файла по указанному пути.
 
     Params:
     path (str): Путь к файлу, который нужно прочитать.
