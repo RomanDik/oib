@@ -34,7 +34,7 @@ class Asymmetric:
             
     def serialization_private_key(self, path: str)->None:
         """
-        Преобразуйте закрытый ключ в файл в формате PEM без шифрования.
+        Преобразование закрытого ключа в файл в формате PEM без шифрования.
 
         Params:
         path (str): Путь к файлу, в который будет записан закрытый ключ.
@@ -70,7 +70,7 @@ class Asymmetric:
 
     def encrypt_symmetric_key(self, key: bytes, path_to_public_key: str)->bytes:
         """
-        Зашифруйте данный текст с помощью открытого ключа.
+        Зашифровка данного текста с помощью открытого ключа.
 
         Params:
         key (bytes): Ключ, который должен быть зашифрован.

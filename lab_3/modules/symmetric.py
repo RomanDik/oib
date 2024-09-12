@@ -1,8 +1,9 @@
 import os
+
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
-from modules.file_working import *
+from modules.file_working import write_bytes_to_txt, read_bytes
 
 class Symmetric:
     def __init__(self):
